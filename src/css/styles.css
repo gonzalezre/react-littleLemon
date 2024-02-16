@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+}
+
+.logo {
+    /* justify-content: center; */
+    /* Takes up available space */
+}
+
+.logo>img {
+    width: 320px;
+    height: 66px;
+}
+
+nav {
+    /* gap: 20px; */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 16px 8px 6px 8px;
+}
+
+nav li>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+#heroSection {
+    background-color: #495E57;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#heroSection>div {
+    flex: 1;
+    padding: 20px;
+}
+
+#heroSection>div:first-child {
+    justify-content: center;
+    /* display: flex;
+    flex-direction: column;
+    padding: 75px 0px; */
+}
+
+
+#heroSection h1 {
+    color: #F4C314;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+#heroSection h2 {
+    color: #EDEFEE;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+}
+
+#heroSection p {
+    color: #EDEFEE;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    width: 50%;
+    text-align: justify;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 8px 35px;
+    border: none;
+    border-radius: 8px;
+    width: 25%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #F4C314;
+}
+
+.btn-primary:hover {
+    background-color: #EDEFEE;
+    color: #495E57;
+    cursor: pointer;
+}
+
+#heroSection img {
+    width: 325px;
+    height: 375px;
+    position: absolute;
+    border-radius: 16px;
+}
+
+#highlightsSection {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#highlightsSection>div {
+    width: 50%;
+}
+
+#highlightsSection h2 {
+    color: #000;
+    font-size: 36;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+}
+
+.highlightsHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.highlightsContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

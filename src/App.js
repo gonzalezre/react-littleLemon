@@ -1,17 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import './css/styles.css';
-import { Footer, Header, Main, Nav } from './components';
-import { BrowserRouter } from 'react-router-dom';
+import { BookingPage, Footer, Header, HomePage, Main, Nav } from './components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-      
-      <Header />
-      <Main />
-      <Footer />
-  
+    <Header />
+    <Routes> 
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/booking" element={<BookingPage  />}></Route>
+    </Routes>
+  <Footer />
     </BrowserRouter>
     
   );

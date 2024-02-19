@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Routes, Route, Link } from "react-router-dom";
 import { HomePage } from './HomePage'
 import { BookingPage } from './BookingPage'
+import { Header } from './Header';
+import { Footer } from './Footer';
 
 export const Main = () => {
+
   return (
-    <Routes> 
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/booking" element={<BookingPage />}></Route>
-    </Routes>
+    <>
+      
+      <HomePage />
+
+      {/* '26.51 */}
+      
+    </>
+    
+      
 
     
   )

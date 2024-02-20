@@ -208,3 +208,83 @@ nav li>a {
     color: #000;
     font-weight: bold;
 }
+
+#bookingSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+}
+
+#bookingSection form {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    border: solid 2px #d0d0d0;
+    padding: 16px;
+}
+
+#bookingSection form fieldset {
+    border: none;
+    width: 25%;
+}
+
+#bookingSection form fieldset>label {
+    font-weight: bold;
+}
+
+#bookingSection form fieldset>input,
+#bookingSection form fieldset>select {
+    background-color: #D9D9D9;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    display: block;
+    color: #495E57;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-secondary {
+    background-color: #495E57;
+    color: #D9D9D9;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+#footerSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+#footerSection>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 8px;
+}
+
+#footerSection>div:first-child {
+    flex: 2;
+    text-align: justify;
+    padding: 16px;
+}
+
+#footerSection>div>* {
+    /* align-self: stretch; */
+    width: auto;
+}
+
+#footerSection>div a {
+    /* align-self: stretch; */
+    color: #000;
+    TEXT-DECORATION: none;
+    font-size: 14px;
+}

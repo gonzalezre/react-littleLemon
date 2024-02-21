@@ -97,13 +97,17 @@ nav li>a {
 }
 
 .btn {
-    padding: 12px 36px;
+    padding: 12px 12px;
     border: none;
     border-radius: 8px;
     width: 25%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     font-size: 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -244,6 +248,18 @@ nav li>a {
     color: #495E57;
     font-weight: bold;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.btnHolder {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    width: 25%;
 }
 
 .btn-secondary {
@@ -251,8 +267,8 @@ nav li>a {
     color: #D9D9D9;
 }
 
-.w-25 {
-    width: 25%;
+.w-100 {
+    width: 100%;
 }
 
 #footerSection {

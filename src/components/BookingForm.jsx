@@ -21,8 +21,28 @@ export const BookingForm = ({availableTimes, dispatch, submitForm}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if(date === ''){
+      alert("Please complete date");
+      return;
+    }
+
+    if(times === ''){
+      alert("Please complete time");
+      return;
+    }
+
+    if(guests === 0){
+      alert("Please complete guests");
+      return;
+    }
+
+    if(occasion === ''){
+      alert("Please complete occasion");
+      return;
+    }
+
     submitForm(e);
-    console.log("onSubit");
   }
 
   const handleChange = (date) => {
@@ -70,12 +90,18 @@ export const BookingForm = ({availableTimes, dispatch, submitForm}) => {
         <fieldset>
           <label htmlFor="occasion">Occasion</label>
           <select id="occasion" onChange={e=> setOcassion(e.target.value)}>
-              {occasion.map((occasion, index) => (
-            <option key={index}>{occasion}</option>
-          ))}
+              {
+                occasion.map((occasion, index) => (
+                <option key={index}>{occasion}</option>
+                ))
+              }
           </select>
         </fieldset>
-        <input type="submit" value="Make Your reservation" className='btn btn-secondary w-25'/>
+        <div className='btnHolder'>
+          <input type="submit" value="Make Your reservation" className='btn btn-secondary w-100' alt='MakeReservation' aria-label="On Click"/>
+        </div>    
+        
+        
       </form>
     </section>
    

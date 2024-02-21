@@ -44,6 +44,19 @@ nav li>a {
 
 }
 
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #495E57;
+    margin: 5px 0;
+}
+
 #heroSection {
     background-color: #495E57;
     padding: 20px;
@@ -140,7 +153,7 @@ nav li>a {
 
 #highlightsSection h2 {
     color: #000;
-    font-size: 36;
+    font-size: 36px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 0px;
@@ -303,4 +316,96 @@ nav li>a {
     color: #000;
     TEXT-DECORATION: none;
     font-size: 14px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    #highlightsSection>div {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid white;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .visible {
+        display: block;
+        top: 130px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+
+    }
+
+
+    #heroSection {
+        background-color: #495E57;
+        padding: 20px;
+        display: block;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    #highlightsSection {
+        display: block;
+        padding-top: 21rem;
+    }
+
+    #highlightsSection>div {
+        width: 100%;
+    }
+
+    #highlightsSection h2 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .highlightsHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0.35rem;
+        padding-right: 0.35rem;
+        align-items: center;
+    }
+
+    .highlightsContent {
+        display: block;
+    }
+
+    #footerSection {
+        display: block;
+    }
+
 }

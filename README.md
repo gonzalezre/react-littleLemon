@@ -34,3 +34,9 @@ To run the Little Lemon project locally, follow these steps:
 ## Author
 
 Rafael Gonzalez.
+
+## Screenshots
+![Screenshot 1](https://raw.githubusercontent.com/gonzalezre/react-littleLemon/main/screenshots/ss1.png)
+![Screenshot 2](https://raw.githubusercontent.com/gonzalezre/react-littleLemon/main/screenshots/ss2.png)
+![Screenshot 3](https://raw.githubusercontent.com/gonzalezre/react-littleLemon/main/screenshots/ss3.png)
+![Screenshot 4](https://raw.githubusercontent.com/gonzalezre/react-littleLemon/main/screenshots/ss4.png)
